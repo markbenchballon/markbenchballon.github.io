@@ -1,0 +1,441 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url('beer.avif'); /* Set the background image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    color: #000000; /* Black color for text */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    background-color: #fff; /* Set background color */
+    
+}
+
+.logo {
+    font-size: 3.5rem; /* Larger font size for the logo */
+    color: #d4a000; /* Golden color */
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center nav items horizontally */
+    align-items: center; /* Center nav items vertically */
+    gap: 2rem; /* Space between icons */
+    padding: 1rem;
+}
+
+nav a {
+    font-size: 2.2rem; /* Adjust icon size */
+    color: #000; /* Icon color */
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #d4a000; /* Golden color on hover */
+    border-bottom: 3px solid #d4a000;
+}
+
+nav i {
+    font-size: 3rem; /* Larger icons */
+}
+
+/* Home Section */
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #ffeb99; /* Light beer color */
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #000000; /* Black color for h1 */
+}
+
+span {
+    color: #d4a000; /* Golden color for span */
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 500; /* Adjusted weight */
+    color: #000000; /* Black color for h3 */
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    color: #000000; /* Black color for paragraph */
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #e0a70d; /* Darker amber shadow */
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons {
+    position: fixed;
+    top: 2rem; /* Distance from the top */
+    right: 2rem; /* Distance from the right */
+    display: flex;
+    align-items: center;
+    z-index: 100; /* Ensure it’s above other content */
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem; /* Increased size for social icons */
+    height: 5rem;
+    background-color: transparent;
+    border: 0.2rem solid #000000; /* Black border for icons */
+    font-size: 2.5rem; /* Increased size for icons */
+    border-radius: 50%;
+    margin: 0 1.5rem; /* Increased spacing between icons */
+    transition: 0.3s ease;
+    color: #000000; /* Black color for icons */
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #000000; /* Black background on hover */
+    box-shadow: 0 0 25px #000000; /* Black shadow on hover */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #d4a000;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #d4a000;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: #b8860b; /* Darker gold */
+    color: #fff;
+    box-shadow: 0 0 25px #d4a000;
+}
+
+/* Typing Text Animation */
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+}
+
+.event-icon {
+    font-size: 2.2rem; /* Adjust icon size */
+    color: #000; /* Icon color */
+    transition: 0.3s ease;
+}
+
+.event-icon:hover,
+.event-icon.active {
+    color: #d4a000; /* Golden color on hover */
+    border-bottom: 3px solid #d4a000;
+}
+
+/* Featured Products Section */
+.featured-products {
+    background-color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 3rem;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-card h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.6rem;
+    color: #d4a000;
+    margin-bottom: 1rem;
+}
+
+.product-card .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #d4a000;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 4rem;
+    border: 2px solid #d4a000;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #b8860b;
+}
+
+/* Magazine Section */
+.magazine {
+    padding: 5rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.magazine h1 {
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.magazine p {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.magazine-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.magazine-article {
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+}
+
+.magazine-article img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.magazine-article h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.magazine-article p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+/* UM History Section */
+.history {
+    background-color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.history h1 {
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.history p {
+    font-size: 1.8rem;
+    color: #666;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* School Mission and Vision Section */
+.school-mission-vision {
+    padding: 5rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.school-mission-vision h1 {
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.school-mission-vision h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.school-mission-vision p {
+    font-size: 1.8rem;
+    color: #666;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Computer Science Section */
+.cs-section {
+    padding: 5rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cs-section h1 {
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.cs-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.cs-section p {
+    font-size: 1.8rem;
+    color: #666;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* CS Professors Section */
+.cs-professors {
+    padding: 5rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.cs-professors h2 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.cs-professors ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cs-professors li {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Event Section */
+.event {
+    padding: 5rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.event h1 {
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+}

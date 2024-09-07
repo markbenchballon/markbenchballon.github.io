@@ -1,0 +1,137 @@
+/* General Reset */
+body, h1, h2, p, ul, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #d4a000;
+    font-weight: bold; /* Bold text */
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    font-size: 2.5rem;
+    color: #000;
+    transition: 0.3s ease;
+    font-weight: bold; /* Bold icons */
+}
+
+nav a:hover,
+nav a.active {
+    color: #d4a000;
+    border-bottom: 2px solid #d4a000;
+}
+
+nav i {
+    font-size: 2rem;
+    font-weight: bold; /* Bold icons */
+}
+
+/* Top Icons Navigation */
+nav.top-icons {
+    display: flex;
+    justify-content: center;
+    background-color: #ffeb99;
+    padding: 10px 0;
+}
+
+nav.top-icons a {
+    color: rgb(14, 9, 9);
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: bold; /* Bold icons */
+}
+
+nav.top-icons a:hover {
+    color: #f7f2ee;
+}
+
+/* Logo Image */
+.logo-image {
+    height: 50px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Content Sections */
+.history, .school-mission-vision, .cs-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.history h1, .school-mission-vision h1, .cs-section h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #070505;
+    text-align: center;
+    font-weight: bold; /* Bold headings */
+}
+
+.history p, .school-mission-vision p, .cs-section p, .cs-section ul {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #0a0808;
+    font-weight: bold; /* Bold text */
+}
+
+ul {
+    padding-left: 40px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold list items */
+}
+
+/* Footer */
+.footer {
+    background-color: #d4a000;
+    color: #080707;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold; /* Bold footer text */
+}

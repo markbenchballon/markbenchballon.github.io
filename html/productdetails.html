@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Brew Street</title>
+    
+    <style>
+        /* Container for history, mission, and vision */
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        /* Section Styling */
+        .info-section {
+            flex: 1;
+            text-align: justify;
+            font-size: 1.4em; /* Increased font size */
+            line-height: 1.8em;
+        }
+
+        /* Titles styling */
+        .info-section h1 {
+            text-align: center;
+            font-size: 2.2em; /* Increased font size for headings */
+            margin-bottom: 20px;
+        }
+
+        /* Adjust for small screens */
+        @media (max-width: 768px) {
+            .info-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Brew Street</a>
+    
+        <nav>
+            <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
+            <a href="shop.html" class="shopping-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- New "Shop Details" Icon -->
+            <a href="productdetails.html" class="shop-details-icon"><i class="fa-solid fa-info"></i></a>
+            <a href="magazine.html" class="magazine-icon"><i class="fa-solid fa-newspaper"></i></a>
+            <a href="um history.html" class="details-icon"><i class="fa-solid fa-info-circle"></i></a>
+            <a href="event.html" class="event-icon"><i class="fa-solid fa-calendar-days"></i></a>
+            <a href="contact.html" class="contact-icon" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <!-- New Computer Icon -->
+            <a href="computer.html" class="computer-icon"><i class="fa-solid fa-computer"></i></a>
+        </nav>
+    </header>
+
+    <!-- Container for History, Mission, and Vision -->
+    <section class="info-container">
+        <!-- Company History Section -->
+        <div class="info-section company-history">
+            <h1>The History of Brew Street</h1>
+            <p><strong>Founded:</strong> August 31, 2024</p>
+            <p>Brew Street was born from a genuine passion for beer. Our founder, a lifelong beer enthusiast, decided to create a place where high-quality, unique brews could be enjoyed by everyone. What began as a personal love for beer turned into a full-scale business aimed at delivering the finest beer experience possible.</p>
+
+            <p><strong>The Inspiration:</strong> The founder of Brew Street has always believed that beer is more than just a drink—it's a way to bring people together, celebrate moments, and enjoy the artistry behind each brew. The idea was simple: combine passion, craft, and community to create a unique beer company that caters to enthusiasts and newcomers alike.</p>
+
+            <p><strong>Why We Brew:</strong> Quite simply, we brew because we love beer. Our founder’s love for drinking and appreciating the intricacies of beer has driven the business from the start. Every batch we brew is crafted with that same passion, making each sip a reflection of the enthusiasm and love that inspired Brew Street.</p>
+        </div>
+
+        <!-- Mission Section -->
+        <div class="info-section mission">
+            <h1>Our Mission</h1>
+            <p>At Brew Street, we believe in crafting beers that inspire connection and celebration. We are committed to sourcing the finest ingredients, experimenting with new brewing techniques, and maintaining the quality that our customers expect. Whether you are enjoying our flagship beers or exploring limited-edition brews, we aim to offer something extraordinary in every glass.</p>
+
+            <!-- Vision Section -->
+            <h1>Our Vision</h1>
+            <p>Brew Street aims to become a staple in the craft beer community by creating a brand that is synonymous with quality, innovation, and passion. We envision expanding our reach through local partnerships, events, and an expanding lineup of signature and seasonal brews.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Brew Street Liquor
+    </footer>
+</body>
+</html>

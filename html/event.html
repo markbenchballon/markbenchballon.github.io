@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style6.css">
+    <title>Contact Us - Brew Street Liquor</title>
+</head>
+<header>
+    <a href="index.html" class="logo">Brew Street</a>
+
+    <nav>
+        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
+        <a href="shop.html" class="shopping-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- New "Shop Details" Icon -->
+        <a href="productdetails.html" class="shop-details-icon"><i class="fa-solid fa-info"></i></a>
+        <a href="magazine.html" class="magazine-icon"><i class="fa-solid fa-newspaper"></i></a>
+        <a href="um history.html" class="details-icon"><i class="fa-solid fa-info-circle"></i></a>
+        <a href="event.html" class="event-icon"><i class="fa-solid fa-calendar-days"></i></a>
+        <a href="contact.html" class="contact-icon" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <!-- New Computer Icon -->
+        <a href="computer.html" class="computer-icon"><i class="fa-solid fa-computer"></i></a>
+    </nav>
+</header>
+<body>
+    <!-- Top Icons Navigation -->
+    
+    <!-- Magazine Content Section -->
+    <section id="magazine-content" class="magazine">
+        <h1>EVENTS</h1>
+        <p>Welcome to our event section where you can see the event we attended in the CS course</p>
+        
+        <div class="magazine-grid">
+            <div class="magazine-article">
+                <img src="eyahh.jpg" alt="PERSONAL">
+                <h2>Article Title 1</h2>
+                <p>another event of cs course we are 2nd yr here :></p>
+            </div>
+            <div class="magazine-article">
+                <img src="myboyy.jpg" alt="FAMILY">
+                <h2>Article Title 2</h2>
+                <p>cs event iconic photo of mcoy grandia bscs 2nd yr <:</p>
+            </div>
+            <div class="magazine-article">
+                <img src="musicalevent1.jpg" alt="FRIENDS">
+                <h2>Article Title 3</h2>
+                <p>after event party its so fun</p>
+            </div>
+            <div class="magazine-article">
+                <img src="muscialevent2.jpg" alt="PERSONAL">
+                <h2>Article Title 4</h2>
+                <p>another musical event on cs department</p>
+            </div>
+            <div class="magazine-article">
+                <img src="mythical.jpg" alt="PERSONAL">
+                <h2>Article Title 5</h2>
+                <p>intramurals picture with ponsoy the mvp and the rookie of the year</p>
+            </div>
+            <div class="magazine-article">
+                <img src="sportfest.jpg" alt="PERSONAL">
+                <h2>Article Title 6</h2>
+                <p>sportfest awarding mythical 5</p>
+            </div>
+            <div class="magazine-article">
+                <img src="sportfestmythical.jpg" alt="PERSONAL">
+                <h2>Article Title 6</h2>
+                <p>awarding</p>
+            </div>
+            <div class="magazine-article">
+                <img src="another1.jpg" alt="PERSONAL">
+                <h2>Article Title 6</h2>
+                <p>pic with classmate</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Brew Street Liquor
+    </footer>
+    
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelector('.magazine-icon').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.magazine-cover').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

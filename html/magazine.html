@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Magazine - Brew Street Liquor</title>
+</head>
+
+<header>
+    <a href="index.html" class="logo">Brew Street</a>
+
+    <nav>
+        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
+        <a href="shop.html" class="shopping-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- New "Shop Details" Icon -->
+        <a href="productdetails.html" class="shop-details-icon"><i class="fa-solid fa-info"></i></a>
+        <a href="magazine.html" class="magazine-icon"><i class="fa-solid fa-newspaper"></i></a>
+        <a href="um history.html" class="details-icon"><i class="fa-solid fa-info-circle"></i></a>
+        <a href="event.html" class="event-icon"><i class="fa-solid fa-calendar-days"></i></a>
+        <a href="contact.html" class="contact-icon" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <!-- New Computer Icon -->
+        <a href="computer.html" class="computer-icon"><i class="fa-solid fa-computer"></i></a>
+    </nav>
+</header>
+</header>
+<body>
+
+    <div class="magazine-cover"></div>
+    <img src="magcov2.jpg" alt="Magazine Cover" class="cover-image">
+
+    <div class="magazine-cover">
+        <img src="magcov.jpg" alt="Magazine Cover" class="cover-image">
+    </div>
+
+    <!-- Magazine Content Section -->
+    <section id="magazine-content" class="magazine">
+        <h1>Family, Personal, Friends Magazine</h1>
+        <p>Welcome to our magazine section where you can see my personal pictures, family, and friends!</p>
+        
+        <div class="magazine-grid">
+            <div class="magazine-article">
+                <img src="mb.jpg" alt="PERSONAL">
+                <p>Hi, I am Mark Bench, my nickname is MB, and I'm your good friend :></p>
+            </div>
+            <div class="magazine-article">
+                <img src="family.jpg" alt="FAMILY">
+                <p>And this is my family. I love them all <:</p>
+            </div>
+            <div class="magazine-article">
+                <img src="friends1.jpg" alt="FRIENDS">
+                <p>School friends</p>
+            </div>
+            <div class="magazine-article">
+                <img src="mb2.jpg" alt="PERSONAL">
+                <p>ugly</p>
+            </div>
+            <div class="magazine-article">
+                <img src="rides.jpg" alt="PERSONAL">
+                <p>Rides</p>
+            </div>
+            <div class="magazine-article">
+                <img src="bball.jpg" alt="PERSONAL">
+                <p>Basketball papawis division team mates</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume-section" class="resume">
+        <h1>Resume</h1>
+        <div class="resume-cover">
+            <img src="resume.jpg" alt="Resume" class="resume-image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Brew Street Liquor
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelector('.magazine-icon').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.magazine-cover').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
